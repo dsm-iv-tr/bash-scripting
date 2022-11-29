@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/pdf;
+Actions=combine_pdf
+X-KDE-Submenu=PDF Operations
+X-KDE-Priority=TopLevel
+
+[Desktop Action combine_pdf]
+Name=Combine PDFs
+Icon=package
+Exec=pdfunite %U $(date '+%d%m%Y-%H%M%S')-combined.pdf
