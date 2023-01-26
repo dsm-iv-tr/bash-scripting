@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.ms-powerpoint;application/msword;application/vnd.openxmlformats-officedocument.wordprocessingml.document
+Actions=docs_to_pdf;
+X-KDE-Submenu=Document Operations
+X-KDE-Priority=TopLevel
+
+[Desktop Action docs_to_pdf]
+Name=Convert to PDF ('libreoffice')
+Icon=package
+Exec=libreoffice --convert-to pdf %U
